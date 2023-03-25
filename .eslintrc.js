@@ -1,20 +1,26 @@
 module.exports = {
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  },
   env: {
     browser: true,
-    es2021: true,
+    es2021: true
   },
-  extends: ['plugin:react/recommended', 'standard'],
+  extends: [
+    'plugin:react/recommended', 'standard'],
   overrides: [
     {
       files: ['**/*.test.js', '**/*.spec.js'],
       env: {
-        jest: true,
-      },
-    },
+        jest: true
+      }
+    }
   ],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: ['react'],
   rules: {
@@ -23,9 +29,9 @@ module.exports = {
     'space-before-function-paren': 'off',
     'react/jsx-indent': [2, 2],
     'react/prop-types': 'off',
-    'jsx-quotes': [2, 'prefer-double'],
+    'jsx-quotes': [2, 'prefer-single'],
     'multiline-ternary': 'off',
     'react/no-unescaped-entities': 'off',
-    'comma-dangle': 'off',
-  },
+    'comma-dangle': 'off'
+  }
 };

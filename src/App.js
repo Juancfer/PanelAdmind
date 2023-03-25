@@ -33,13 +33,13 @@ function App() {
   return (
     <BrowserRouter>
       <IntlProvider locale={locale} messages={messages}>
-        <div className="App">
+        <div className='App'>
           <Header setMessages={setMessages}/>
         </div>
         <Routes>
-          <Route path="/" element={<HomePage/>}></Route>
-          <Route path="/users" element={<UserList/>}></Route>
-          <Route path="/create-user" element={<CreateUser/>}></Route>
+          <Route path='/' element={<HomePage/>}></Route>
+          <Route path='/users' element={<UserList/>}></Route>
+          <Route path='/create-user' element={<CreateUser/>}></Route>
         </Routes>
       </IntlProvider>
     </BrowserRouter>
